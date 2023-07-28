@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEMPERATURE CONVERTER</title>
+
+<style>
+
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 450px;
+    background: rgb(11, 11, 11);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgb(209, 58, 12);
+    font-family: sans-serif;
+    padding: 20px ;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+.temperature-icon{
+    font-size: 45px;
+    color: antiquewhite;
+
+}
+h1{
+    color: rgb(187, 32, 9);
+    letter-spacing: 1.4px;
+}
+#celcius,#fahrenheit,#kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+input{
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0px 0px 8px;
+    padding: 0px 10px;
+
+}
+input ::-webkit-outer-spin-button,
+input ::-webkit-inner-spin-button{
+    -webkit-animation: none;
+
+}
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 5px;
+    text-align: center;
+    font-size: 30px;
+    background: rgb(151, 35, 51);
+    color: beige;
+    border-radius: 0 8px 8px 0;
+
+}
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+.button button{
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.button button:hover{
+    background: rgb(6, 5, 5);
+    color: azure;
+}
+body {
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAE2piG_W2eRZPf1dKuAPYcT4DE0xo8GwTnQ&usqp=CAU) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <h1>Temperature Converter</h1>
+            <span class="temperature-icon"><i class="fa-solid fa-temperature-three-quarters"></i></span>
+        </div>
+        <div id="celcius">
+            <input type="number" name="" placeholder="celcius">
+            <span class="icon">&#8451</span>
+        </div>
+        <div id="fahrenheit">
+            <input type="number" name="" placeholder="fahrenheit">
+            <span class="icon">&#8457</span>
+        </div>
+            <div id="kelvin">
+                <input type="number" name="" placeholder="kelvin">
+                <span class="icon">&#8490</span>
+        </div>
+        <div class="button">
+            <button>CLEAR</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
